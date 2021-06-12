@@ -1,0 +1,115 @@
+*{
+  margin:0;
+  paddding:0
+}
+.container{
+  border:1px solid;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px;
+}
+.container .digitalTime{
+  font-size:30px;
+  margin-bottom:30px;
+}
+.clock-container{
+  border:2px solid #333;
+  width:300px;
+  height:300px;
+  padding:10px;
+  border-radius:50%;
+  background-color:#333;
+  box-shadox:0 0 18px 0 rgb(0 0 0 / 50%);
+}
+.clock-numbers{
+  position:relative;
+  height:100%;
+  width:100%;
+  color:#fff;
+}
+.clock-numbers .hand{
+    width: 0px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    border-radius : 4px 4px 0 0;
+    transform: rotate(0deg); 
+    background-color:#fff;
+}
+.clock-numbers .anim{
+  transition:900ms;
+}
+.clock-numbers .hourHand{
+    border: 3px solid #fff;
+    height: 32%;
+    transform: translate(-50%) rotate(300deg);
+    z-index:4;
+}
+.hourHand:after {
+    content: "";
+    border: 8px solid;
+    position: absolute;
+    bottom: -10px;
+    left: -8px;
+    border-radius: 50%;
+}
+
+.clock-numbers .minuteHand{
+    border: 3px solid #fff;
+    height: 40%;
+    transform: translate(-50%) rotate(60deg);
+    z-index:2;
+}
+.clock-numbers .secondHand{
+    border: 1px solid red;
+    height: 41%;
+    transform: translate(-50%) rotate(180deg);
+    z-index:3;
+}
+.clock-numbers .numbers{
+
+  text-align:center;
+  tranform:rotate(0deg);
+  position:absolute;
+  width:100%;
+  height:100%;
+  font-size:20px;
+}
+.numbers.number1{
+  transform:rotate(30deg)
+}
+.numbers.number2{
+  transform:rotate(60deg)
+}
+.numbers.number3{
+  transform:rotate(90deg)
+}
+.numbers.number4{
+  transform:rotate(120deg)
+}
+.numbers.number5{
+  transform:rotate(150deg)
+}
+.numbers.number6{
+  transform:rotate(180deg)
+}
+.numbers.number7{
+  transform:rotate(210deg)
+}
+.numbers.number8{
+  transform:rotate(240deg)
+}
+.numbers.number9{
+  transform:rotate(270deg)
+}
+.numbers.number10{
+  transform:rotate(300deg)
+}
+.numbers.number11{
+  transform:rotate(330deg)
+}
+.numbers.number12{
+  transform:rotate(0deg)
+}
